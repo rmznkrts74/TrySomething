@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-
 def main():
     print("Do you wanna draw how much Graph: 1 or more than 1: ")
     x=int(input("Please enter do you wanna draw how much graph back to back: "))
