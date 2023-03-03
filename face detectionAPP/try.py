@@ -3,12 +3,11 @@ import face_recognition
 # Kayıtlı yüzlerin fotoğraflarını yükle
 known_image_1 = face_recognition.load_image_file("brad.jpg")
 known_image_2 = face_recognition.load_image_file("kıvanc.jpg")
-known_image_3 = face_recognition.load_image_file("ramazan.jpg")
+
 
 # Kayıtlı yüzlerin özelliklerini hesapla
 known_face_encoding_1 = face_recognition.face_encodings(known_image_1)[0]
 known_face_encoding_2 = face_recognition.face_encodings(known_image_2)[0]
-known_face_encoding_3 = face_recognition.face_encodings(known_image_3)[0]
 
 #
 import cv2
@@ -16,7 +15,7 @@ import face_recognition
 
 # Kayıtlı yüzleri yükle
 known_face_encodings = [known_face_encoding_1, known_face_encoding_2, ...] # kayıtlı yüz kodlarının listesi
-known_face_names = ["Brad", "Kıvanc","Ramazan"] # kayıtlı yüzlerin isimlerinin listesi
+known_face_names = ["Brad", "Kıvanc"] # kayıtlı yüzlerin isimlerinin listesi
 
 # Sonsuz döngüde, kameradan görüntü yakala ve yüzleri tespit et
 video_capture = cv2.VideoCapture(0) 
